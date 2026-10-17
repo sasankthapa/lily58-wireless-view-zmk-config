@@ -22,11 +22,11 @@
 
             display-name = "Base";
             bindings = <
-&kp EQUAL   &kp N1         &kp N2     &kp N3      &kp N4     &kp N5                              &kp N6  &kp N7     &kp N8    &kp N9  &kp N0  &kp SLASH
-&kp TAB     &kp SQT        &kp COMMA  &kp PERIOD  &kp P      &kp Y                               &kp F   &kp G      &kp C     &kp R   &kp L   &kp NON_US_BACKSLASH
-&kp ESCAPE  &kp A          &kp O      &kp E       &kp U      &kp I                               &kp D   &kp H      &kp T     &kp N   &kp S   &kp MINUS
-&kp LSHFT   &kp SEMICOLON  &kp Q      &kp J       &kp K      &kp X   &kp LEFT_ALT     &kp RCTRL  &kp B   &kp M      &kp W     &kp V   &kp Z   &kp RSHFT
-                                      &kp LALT    &kp TILDE  &mo 1   &kp BACKSPACE    &kp SPACE  &mo 2   &kp ENTER  &kp RGUI
+&kp EQUAL  &kp N1         &kp N2     &kp N3      &kp N4     &kp N5                                    &kp N6     &kp N7    &kp N8    &kp N9  &kp N0  &kp SLASH
+&kp TAB    &kp SQT        &kp COMMA  &kp PERIOD  &kp P      &kp Y                                     &kp F      &kp G     &kp C     &kp R   &kp L   &kp NON_US_BACKSLASH
+&kp RCTRL  &kp A          &kp O      &kp E       &kp U      &kp I                                     &kp D      &kp H     &kp T     &kp N   &kp S   &kp MINUS
+&kp GRAVE  &kp SEMICOLON  &kp Q      &kp J       &kp K      &kp X         &sl 2            &mo 3      &kp B      &kp M     &kp W     &kp V   &kp Z   &kp RSHFT
+                                     &kp LALT    &kp TILDE  &kp LEFT_ALT  &kp BACKSPACE    &kp SPACE  &kp ENTER  &kp RCMD  &kp RGUI
             >;
         };
 
@@ -81,6 +81,16 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        new_one {
+            bindings = <
+&trans  &trans  &trans  &trans    &trans  &trans                    &trans  &trans    &trans  &trans  &trans     &trans
+&trans  &trans  &trans  &trans    &trans  &trans                    &trans  &trans    &trans  &trans  &kp RIGHT  &trans
+&trans  &trans  &trans  &trans    &trans  &trans                    &trans  &kp LEFT  &trans  &trans  &trans     &trans
+&trans  &trans  &trans  &kp DOWN  &kp UP  &trans  &trans    &trans  &trans  &trans    &trans  &trans  &trans     &trans
+                        &trans    &trans  &trans  &trans    &trans  &trans  &trans    &trans
+            >;
         };
     };
 };
