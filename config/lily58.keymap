@@ -28,6 +28,8 @@
 &kp GRAVE  &kp SEMICOLON  &kp Q      &kp J       &kp K      &kp X         &sl 2            &mo 1      &kp B      &kp M     &kp W   &kp V   &kp Z   &kp RSHFT
                                      &tog 3      &kp TILDE  &kp LEFT_ALT  &kp BACKSPACE    &kp SPACE  &kp ENTER  &kp RCMD  &mo 4
             >;
+
+            sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
         lower_layer {
@@ -46,6 +48,8 @@
 &trans      &tog 3        &trans        &trans        &trans        &trans        &trans    &trans  &trans     &kp MINUS  &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
                                         &trans        &trans        &trans        &trans    &trans  &trans     &trans     &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
         raise_layer {
@@ -65,7 +69,7 @@
                            &trans   &trans   &trans   &trans    &trans  &trans       &trans     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
         qwerty {
@@ -77,6 +81,8 @@
 &kp LSHFT  &kp Z   &kp X   &kp C   &kp V     &kp B   &kp LBKT     &kp RBKT  &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                            &tog 0  &kp LGUI  &mo 1   &kp SPACE    &kp RET   &mo 2   &kp BSPC  &kp RGUI
             >;
+
+            sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
         layer_4 {
@@ -87,6 +93,8 @@
 &trans  &trans    &trans    &trans     &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans   &trans
                             &trans     &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp 0 0>;
         };
     };
 };
