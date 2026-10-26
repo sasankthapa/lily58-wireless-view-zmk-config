@@ -22,11 +22,11 @@
 
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1         &kp N2     &kp N3      &kp N4     &kp N5                                    &kp N6     &kp N7    &kp N8    &kp N9  &kp N0  &kp SLASH
-&kp TAB    &kp SQT        &kp COMMA  &kp PERIOD  &kp P      &kp Y                                     &kp F      &kp G     &kp C     &kp R   &kp L   &kp NON_US_BACKSLASH
-&kp RCTRL  &kp A          &kp O      &kp E       &kp U      &kp I                                     &kp D      &kp H     &kp T     &kp N   &kp S   &kp MINUS
-&kp GRAVE  &kp SEMICOLON  &kp Q      &kp J       &kp K      &kp X         &sl 2            &mo 3      &kp B      &kp M     &kp W     &kp V   &kp Z   &kp RSHFT
-                                     &kp LALT    &kp TILDE  &kp LEFT_ALT  &kp BACKSPACE    &kp SPACE  &kp ENTER  &kp RCMD  &kp RGUI
+&kp EQUAL  &kp N1         &kp N2     &kp N3      &kp N4     &kp N5                                    &kp N6     &kp N7    &kp N8  &kp N9  &kp N0  &kp SLASH
+&kp TAB    &kp SQT        &kp COMMA  &kp PERIOD  &kp P      &kp Y                                     &kp F      &kp G     &kp C   &kp R   &kp L   &kp NON_US_BACKSLASH
+&kp RCTRL  &kp A          &kp O      &kp E       &kp U      &kp I                                     &kp D      &kp H     &kp T   &kp N   &kp S   &kp MINUS
+&kp GRAVE  &kp SEMICOLON  &kp Q      &kp J       &kp K      &kp X         &sl 2            &mo 1      &kp B      &kp M     &kp W   &kp V   &kp Z   &kp RSHFT
+                                     &tog 3      &kp TILDE  &kp LEFT_ALT  &kp BACKSPACE    &kp SPACE  &kp ENTER  &kp RCMD  &mo 4
             >;
         };
 
@@ -46,8 +46,6 @@
 &trans      &tog 3        &trans        &trans        &trans        &trans        &trans    &trans  &trans     &kp MINUS  &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
                                         &trans        &trans        &trans        &trans    &trans  &trans     &trans     &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         raise_layer {
@@ -63,7 +61,7 @@
 &trans     &trans  &trans  &trans   &trans   &trans                     &trans       &trans     &trans     &trans    &trans     &trans
 &kp GRAVE  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5                     &kp N6       &kp N7     &kp N8     &kp N9    &kp N0     &trans
 &kp F1     &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &trans       &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans
-&kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
+&kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &sl 3     &trans  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
                            &trans   &trans   &trans   &trans    &trans  &trans       &trans     &trans
             >;
 
@@ -73,23 +71,21 @@
         qwerty {
             display-name = "gaem";
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                         &kp N6  &kp N7    &kp N8     &kp N9   &kp N0    &kp GRAVE
-&kp TAB    &kp Q   &kp W   &kp E     &kp R     &kp T                          &kp Y   &kp U     &kp I      &kp O    &kp P     &kp MINUS
-&kp LCTRL  &kp A   &kp S   &kp D     &kp F     &kp G                          &kp H   &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X   &kp C     &kp V     &kp B   &kp LBKT     &kp RBKT  &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                           &kp LALT  &kp LGUI  &mo 1   &kp SPACE    &kp RET   &mo 2   &kp BSPC  &kp RGUI
+&kp ESC    &kp N1  &kp N2  &kp N3  &kp N4    &kp N5                         &kp N6  &kp N7    &kp N8     &kp N9   &kp N0    &kp GRAVE
+&kp TAB    &kp Q   &kp W   &kp E   &kp R     &kp T                          &kp Y   &kp U     &kp I      &kp O    &kp P     &kp MINUS
+&kp LCTRL  &kp A   &kp S   &kp D   &kp F     &kp G                          &kp H   &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z   &kp X   &kp C   &kp V     &kp B   &kp LBKT     &kp RBKT  &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                           &tog 0  &kp LGUI  &mo 1   &kp SPACE    &kp RET   &mo 2   &kp BSPC  &kp RGUI
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        new_one {
+        layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans    &trans  &trans                    &trans  &trans    &trans  &trans  &trans     &trans
-&trans  &trans  &trans  &trans    &trans  &trans                    &trans  &trans    &trans  &trans  &kp RIGHT  &trans
-&trans  &trans  &trans  &trans    &trans  &trans                    &trans  &kp LEFT  &trans  &trans  &trans     &trans
-&trans  &trans  &trans  &kp DOWN  &kp UP  &trans  &trans    &trans  &trans  &trans    &trans  &trans  &trans     &trans
-                        &trans    &trans  &trans  &trans    &trans  &trans  &trans    &trans
+&kp F1  &kp F2    &kp F3    &kp F4     &kp F5  &kp F6                    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &trans    &kp UP    &trans     &trans  &trans                    &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans                    &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans    &trans    &trans     &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans   &trans
+                            &trans     &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
     };
